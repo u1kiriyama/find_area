@@ -59,14 +59,14 @@ while(true):
             if (newrect[0]-j[0])*(newrect[0]-j[2])<0 or (newrect[2]-j[0])*(newrect[2]-j[2])<0 \
                 or (newrect[1]-j[1])*(newrect[1]-j[3])<0 or (newrect[1]-j[1])*(newrect[1]-j[3])<0:
                     appendfalg=0
-                    print("+++++ overlay")
+                    #print("+++++ overlay")
                     cnt_overlay+=1
                     break
         if appendfalg:    
             rects.append(newrect)
             i+=1
     else:
-        print("===== outside")
+        #print("===== outside")
         cnt_outside+=1
     #print("========== i : ",i)
     if i==100:
